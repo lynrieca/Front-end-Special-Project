@@ -14,7 +14,7 @@ export class RegisterComponent implements OnInit {
   user: any = {};
   errorMsg: any;
   disableBtn: boolean = false;
-  constructor(private registerservice:RegisterService,
+  constructor(public registerservice:RegisterService,
     private _userservice: UserRegistrationService,
     private _dialog : MatDialog) { }
 

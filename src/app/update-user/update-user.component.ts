@@ -24,7 +24,7 @@ export class UpdateUserComponent implements OnInit {
   durationInSeconds:number = 1;
 
   // userId:number = 2;
-  constructor(private _updateUserService : UpdateUserService,
+  constructor(public _updateUserService : UpdateUserService,
     private _userservice : UserRegistrationService,
     private _snackBar : MatSnackBar,
     private _popup : PopupService,
