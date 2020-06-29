@@ -17,7 +17,7 @@ export class RegistrationComponent implements OnInit {
   user: any = {};
 
   constructor(private fb: FormBuilder,
-              private _userservice : UserRegistrationService,
+              public _userservice : UserRegistrationService,
               public http: HttpClient,
               private _dialog : MatDialog) { }
 

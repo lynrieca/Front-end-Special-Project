@@ -6,13 +6,7 @@ import * as $ from 'jquery';
 import {Route, Router} from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
-export interface Users {
-  id        : number,
-  firstName : string,
-  lastName   : string,
-  emailAdd  : string,
-  passWord  : string,
-}
+
 
 @Component({
   selector: 'app-list',
@@ -22,7 +16,7 @@ export interface Users {
 export class ListComponent implements OnInit {
   // displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   // dataSource = ELEMENT_DATA;
-  users : Users[];
+  users : any;
 
   closeResult: string;
   dataToUpdate: any;
