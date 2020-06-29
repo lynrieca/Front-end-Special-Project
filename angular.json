@@ -27,7 +27,9 @@
               "src/custom-theme.scss",
               "src/styles.css"
             ],
-            "scripts": ["node_modules/jquery/dist/jquery.min.js"]
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -120,6 +122,10 @@
               "devServerTarget": "Frontend-Simple-Web-Project:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }

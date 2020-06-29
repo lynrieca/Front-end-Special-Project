@@ -11,13 +11,13 @@
                     <div class="controlers-container" >
                         <div>
                             <mat-form-field style="width: 100%;">
-                                <input formControlName="email" matInput placeholder="Email*" name="email" #name [(ngModel)]="user.email">
-                                <mat-error>Name is required.</mat-error>
+                                <input formControlName="email" matInput placeholder="Email" name="email" #name [(ngModel)]="user.email" title="eve.holt@reqres.in">
+                                <mat-error>Email is required.</mat-error>
                             </mat-form-field>
                         </div>
                         <mat-form-field style="width: 100%;">
-                            <input formControlName="password" type="password" matInput placeholder="Password*" name="password" #job [(ngModel)]="user.password">
-                            <mat-error>Job is required.</mat-error>
+                            <input formControlName="password" type="password" matInput placeholder="Password" name="password" #job [(ngModel)]="user.password" title="pistol">
+                            <mat-error>Password is required.</mat-error>
                         </mat-form-field>
                     </div>
                     <label style="color: black">{{ errorMsg }}</label>

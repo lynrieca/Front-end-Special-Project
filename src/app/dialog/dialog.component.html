@@ -1,11 +1,17 @@
-<h3 mat-dialog-title style="color: black; text-align: center;">{{data.heading}}</h3>
-
-<div style="display:flex; flex-wrap: wrap;">
-    <div>
-        <mat-label>{{data.data}}</mat-label>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap;">
+    <div style="flex: 1">
+        <h3 mat-dialog-title style="color: black; text-align: center;">{{data.heading}}</h3>
     </div>
-</div>
-<!-- <mat-label style="text-align: center;">test</mat-label> -->
-<div ma-dialog-actions align="center" style="margin-top: 5px;" >
-    <button mat-raised-button mat-dialog-close>Okay</button>
+
+    <div style="flex: 1">
+        <div style="display: flex; flex-wrap: wrap;">
+            {{data.data}}
+        </div>
+    </div>
+    <div style="flex: 1">
+        <!-- <mat-label style="text-align: center;">test</mat-label> -->
+        <div ma-dialog-actions align="center" style="margin-top: 5px;" >
+            <button mat-raised-button mat-dialog-close>Okay</button>
+        </div>
+    </div>
 </div>

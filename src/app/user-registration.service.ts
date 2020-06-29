@@ -82,7 +82,7 @@ export class UserRegistrationService implements OnInit {
             map((data: any) => {
               return data;
             }), catchError( error => {
-              return throwError( 'Something went wrong!' );
+              return throwError( error );
             })
          )
     }
