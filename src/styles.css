@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "assets/css/nav-bar/nav-bar.css";
+@import "assets/css/list/list.css";
+@import "assets/css/registration/registration.css";
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
