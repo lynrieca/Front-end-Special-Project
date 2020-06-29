@@ -1,0 +1,18 @@
+.lbl-title{
+    font-family: 'Roboto';  
+    color: #263238; 
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.lbl-data{
+    font-family: 'Roboto';  
+    color: #263238; 
+    font-weight: 500;
+}
+   
+.cont-select {
+    max-width: 800px;
+    max-height: 100px;
+    margin-top: 10px;
+}

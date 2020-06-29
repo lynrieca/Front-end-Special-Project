@@ -1,0 +1,62 @@
+<div class="container cont-list">
+    <div id="signup" style='margin-top: 10%;'>
+       <div class="signup-screen">
+          <div class="space-bot text-center">
+             <h1 style="color: #263238;">List of Users</h1>
+            <hr style='background-color: #263238;'>
+          </div>
+            <div>
+                <table class="table table-hover" style='color: #263238;'>
+                   <thead style="background-color: #263238; color:white">
+                      <tr>
+                         <th>Firstname</th>
+                         <th>Lastname</th>
+                         <th>Email</th>
+                         <th>Avatar</th>
+                         <th>Action</th>
+                      </tr>
+                   </thead>
+                   <tbody id="t-body">
+                      <tr *ngFor="let user of users">
+                         <td name="firstname">{{ user.first_name }}</td>
+                         <td name="lastname">{{ user.last_name }}</td>
+                         <td name="email">{{ user.email}}</td>
+                         <td name="avatar">{{ user.avatar }}</td>
+                         <td>
+                            <!-- <button type="button" class="btn btn-primary" id="btn-edit" name="btn-edit" (click)="editUser()" >Edit</button> -->
+                            <button type="button" class="btn btn-info" id="btn-edit" name="btn-edit" (click)="getUser(user)" >Details</button>
+                            <!-- <button type="button" class="btn btn-danger" >Delete</button> -->
+                         </td>
+                      </tr>
+                   </tbody>
+                </table>
+             </div>
+        </div>
+    </div>
+</div>
+
+
+ <!-- Central Modal Small -->
+ <div class="modal fade show" id="userModal" #userModal tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+   aria-hidden="true">
+ 
+   <!-- Change class .modal-sm to change the size of the modal -->
+   <div class="modal-dialog modal-sm" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         ...
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal" (click)="closeModal()">Close</button>
+         <button type="button" class="btn btn-primary btn-sm" (click)="updateUser()">Save changes</button>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- Central Modal Small -->
