@@ -45,6 +45,9 @@ export class RegistrationComponent implements OnInit {
 
 addUser(){
     this._userservice.createUsers(this.user).subscribe(res => {
+      if(this.user.name === undefined || this.user.job === undefined){
+        return false;
+      } 
         console.log(res, 'created_data');
         let resp = JSON.stringify(res);  
         console.log(resp, 'resp');
