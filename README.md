@@ -8,5 +8,12 @@ Create an Angular 8 Web Project
 6. User Registration.
 7. Unsuccessful Registration.
 
-Use this for reference https://angular.io/
-Use this API for data https://reqres.in/
+
+##INSTALLATION
+
+Install dependencies: `npm install`
+
+Start application: `npm start`
+
+open browser and browse: `http://localhost:4200`
+
