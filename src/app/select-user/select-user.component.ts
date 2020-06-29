@@ -9,7 +9,7 @@ import { Users } from '../users';
   styleUrls: ['./select-user.component.css']
 })
 export class SelectUserComponent implements OnInit {
-  selectedUser: Users[];
+  selectedUser: any;
   constructor(private _userservice : UserRegistrationService,
     private activeRoute:ActivatedRoute) { }
 
